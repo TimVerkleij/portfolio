@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html{
+    background-color: #2c2f33;
+    color: white;
+    height: 3000px;
+    overflow-x: hidden;
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.mainHeader{
+    margin: 20px;
+}
+
+.appear{
+    transition: .5s;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.come-in{
+    transform: translateY(0);
+    opacity: 100%;
+}
