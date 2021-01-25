@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Pixels on screen</title>
+</head>
+<!-- <body onmousemove="mouseMove(this, event)" id="body"> -->
+
+<body id="body">
+    <div id="container"></div>
+    <!-- <div class="circle"></div> -->
+
+    <div class="options" style="user-select: none;" id="options">
+        <label style="color: white; margin: 10px; margin-left: 300px;">Pick a Color:</label>
+        <input type="color" class="colorPicker" id="colorPicker" value="#FFFFFF">
+        <label style="color: white; margin: 10px;">Pencil THICCness</label>
+        <input type="number" class="numberPicker" id="numberPicker" min="0" max="100" onchange="checkNumber(this)" value="2">
+        <div class="arrowDown" onclick="change()" id="arrow"></div>
+    </div>
+    <!-- <canvas id="canvas"></canvas> -->
+</body>
+<script src="scripts/script.js" defer></script>
+
+</html>
