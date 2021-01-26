@@ -5,8 +5,10 @@ function isInViewport(element) {
 }
 
 
-document.addEventListener('scroll', function () {
-    
+document.addEventListener('scroll', showElements, {passive: true});
+
+
+function showElements() {
     const box = document.querySelectorAll('.appear');
     box.forEach(element => {
 
@@ -16,4 +18,4 @@ document.addEventListener('scroll', function () {
 
     });
 
-}, {passive: true});
+}
