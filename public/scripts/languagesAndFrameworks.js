@@ -18,8 +18,3 @@ function fetchLanguagesAndFramworks(){
             });
         })
 }
-
-window.onload = () => {
-    fetchLanguagesAndFramworks()
-    fetchProjects()
-}
