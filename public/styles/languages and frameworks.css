@@ -13,3 +13,24 @@
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+
+.frameworkBox:hover{
+    transform: scale(1.08);
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.languageImage{
+    width: 240px;
+    height: 240px;
+    object-fit: contain;
+    border-radius: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+.languageTitle{
+    text-align: center;
+    margin-top: 15px;
+}

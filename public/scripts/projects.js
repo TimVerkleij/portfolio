@@ -1,11 +1,9 @@
 function fetchProjects(){
     const projectDiv = document.getElementById("projectDiv")
-    console.log(projectDiv)
 
     fetch('/projects')
         .then(v => v.json())
         .then(response => {
-            console.log(response)
 
             response.forEach(element => {
                 let newDiv = document.createElement("div")
@@ -19,8 +17,4 @@ function fetchProjects(){
                 projectDiv.append(newDiv)
             });
         })
-}
-
-window.onload = () => {
-    fetchProjects()
 }
