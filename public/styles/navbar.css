@@ -1,0 +1,28 @@
+.navbar{
+    position: relative;
+    height: 50px;
+    background-color: #23272a;
+    width: 100%;
+}
+
+.homeButton{
+    position: absolute;
+    background-color: #7289da;
+    width: min-content;
+    height: 50px;
+    border-radius: 0 100px 100px 0;
+}
+
+.homeButton:hover{
+    background-color: #55a0fb;
+    transition: .5s;
+}
+
+.homeButtonText{
+    height: 30px;
+    width: 125px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    pointer-events: none;
+}
