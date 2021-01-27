@@ -17,4 +17,6 @@ function fetchLanguagesAndFramworks(){
                 languageDiv.append(newDiv)
             });
         })
+        .then(res => showElements())
+
 }
