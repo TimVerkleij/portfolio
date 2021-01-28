@@ -1,5 +1,5 @@
 let globalElement
-
+let bottomText = document.getElementById("bottomText")
 
 referenceFunction = () => {
     console.log(globalElement)
@@ -8,6 +8,7 @@ referenceFunction = () => {
 
 function openLanguageBox(element) {
     globalElement = element
+    bottomText.style.display = "block"
     element.classList.toggle("expandedLanguageBox")
     element.classList.toggle("appear")
     element.children[0].classList.toggle("expandedLanguageImage")
@@ -30,6 +31,7 @@ function closeLanguageBox(element) {
         once: true
     });
 
+    bottomText.style.display = "none"
     document.getElementById("backdrop").style.display = "none"
     element.children[0].style.opacity = "0%"
     element.classList.toggle("appear")
