@@ -17,4 +17,5 @@ function fetchProjects(){
                 projectDiv.append(newDiv)
             });
         })
+        .then(res => showElements())
 }
