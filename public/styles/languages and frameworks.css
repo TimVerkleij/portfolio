@@ -47,7 +47,7 @@
     position: fixed;
     width: 80%;
     height: 60%;
-    margin: 5% !important;
+    margin: 6% !important;
     background-color: #23272a;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -78,6 +78,14 @@
     pointer-events: visiblePainted;
     background-color: #23272a57;
     display: none;
+}
+
+.bottomText{
+    position: fixed;
+    display: none;
+    z-index: 99;
+    margin-left: 40%;
+    pointer-events: none;
 }
 
 @media only screen and (max-width: 768px) {
