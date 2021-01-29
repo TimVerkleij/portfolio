@@ -2,7 +2,6 @@ let globalElement
 let bottomText = document.getElementById("bottomText")
 
 referenceFunction = () => {
-    console.log(globalElement)
     closeLanguageBox(globalElement)
 }
 
@@ -24,7 +23,6 @@ function openLanguageBox(element) {
 }
 
 function closeLanguageBox(element) {
-    console.log(element)
 
     document.removeEventListener('scroll', referenceFunction, {
         passive: true,
